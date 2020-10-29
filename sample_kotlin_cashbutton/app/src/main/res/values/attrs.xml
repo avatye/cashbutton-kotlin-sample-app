@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BuggerMenuTextView">
+        <attr name="text" format="reference|string" />
+        <attr name="text_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="HeaderView">
+        <attr name="text" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundRectTextView">
+        <attr name="rect_color" format="color" />
+        <attr name="rect_radius" format="dimension" />
+        <attr name="rect_stroke_width" format="dimension" />
+        <attr name="rect_stroke_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleRectTextView">
+        <attr name="circle_color" format="color" />
+        <attr name="circle_stroke_width" format="dimension" />
+        <attr name="circle_stroke_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RectEditTextView">
+        <attr name="retv_border_radius" format="dimension" />
+        <attr name="retv_border_width" format="dimension" />
+        <attr name="retv_border_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="cpv_progress_border_width" format="dimension" />
+        <attr name="cpv_progress_border_color" format="color" />
+        <attr name="cpv_progress_thickness" format="dimension" />
+        <attr name="cpv_progress_foreground_color" format="color" />
+        <attr name="cpv_progress_background_color" format="color" />
+        <attr name="cpv_progress_center_color" format="color" />
+        <attr name="cpv_progress_value" format="integer" />
+        <attr name="cpv_progress_max" format="integer" />
+        <attr name="cpv_progress_min" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="thickness" format="dimension" />
+        <attr name="progress_max" format="integer" />
+        <attr name="progress_min" format="integer" />
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_foreground_color" format="color" />
+        <attr name="progress_background_color" format="color" />
+        <attr name="outline_color" format="color" />
+        <attr name="outline_thickness" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="P2RRecyclerView">
+        <attr name="layout_header" format="reference" />
+        <attr name="layout_item" format="reference" />
+        <attr name="layout_footer" format="reference" />
+        <attr name="layout_empty" format="reference" />
+        <attr name="isZoom" format="boolean" />
+        <attr name="isParallax" format="boolean" />
+        <attr name="isRefresh" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskLayout">
+        <attr name="layout_mask" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="UnLockerDragView">
+        <attr name="drawable_idle" format="reference" />
+        <attr name="drawable_drop_enter" format="reference" />
+        <attr name="drawable_drop_exit" format="reference" />
+        <attr name="drawable_drag_start" format="reference" />
+        <attr name="drawable_drag_end" format="reference" />
+    </declare-styleable>
+
+
+    <!-- mezzo media attribute // -->
+    <declare-styleable name="com.mapps.android.view.AdView">
+        <attr name="locationType" format="integer" />
+        <attr name="backgroundStretch" format="integer" />
+        <attr name="publisherCode" format="string" />
+        <attr name="mediaCode" format="string" />
+        <attr name="sectionCode" format="string" />
+        <attr name="mediaType" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="com.mapps.android.view.EndingAdView">
+        <attr name="pCode" format="string" />
+        <attr name="mCode" format="string" />
+        <attr name="sCode" format="string" />
+        <attr name="media_Type" format="integer" />
+    </declare-styleable>
+    <!-- // mezzo media attribute -->
+
+    <!-- cauly attribute // -->
+    <declare-styleable name="com.cauly.android.ad.AdView">
+        <attr name="appcode" format="string" />
+        <attr name="effect" format="string" />
+        <attr name="dynamicReloadInterval" format="boolean" />
+        <attr name="reloadInterval" format="integer" />
+        <attr name="threadPriority" format="integer" />
+        <attr name="bannerHeight" format="string" />
+        <attr name="enableDefaultBannerAd" format="boolean" />
+    </declare-styleable>
+    <!-- // cauly attribute -->
+
+
+
+    <!-- // -->
+
+</resources>

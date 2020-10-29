@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/off_white"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:id="@+id/tv_header_title"
+        style="@style/TextViewCommon"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/off_white"
+        android:gravity="center"
+        android:textColor="#564bde"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/ly_header_close"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_icon_page_close" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_header_back"
+        android:layout_width="53.7dp"
+        android:layout_height="56dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_icon_back" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

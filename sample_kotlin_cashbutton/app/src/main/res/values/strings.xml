@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">kotlin_cashbutton_sample</string>
+    <string name="app_label">ADBalloonKotlin</string>
+
+    <string name="cashbutton_sample_app_koltin">캐시버튼 샘플앱 _코틀린</string>
+    <string name="cashbutton_inquire"> 캐시버튼 문의 </string>
+    <string name="cashbutton_notibar_switch"> 노티바 설정 </string>
+    <string name="cashbutton_switch"> 캐시버튼 설정 </string>
+    <string name="cashbutton_and_notibar_switch"> 캐시버튼 및 노티바 설정 </string>
+    <string name="cashbutton_inquire_connect"> 연결 </string>
+    <string name="cashbutton_inquire_contents">  캐시버튼과 관련된 문의를 받기 위한 메뉴 노출 가이드 </string>
+    <string name="cashbutton_notibar_state">  노티바 상태값 </string>
+    <string name="cashbutton_state">  캐시버튼 상태값 </string>
+    <string name="cashbutton_and_notibar_state"> 캐시버튼 및 노티바 상태값 </string>
+</resources>
+
