@@ -4,9 +4,7 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.view.View
 import android.widget.RelativeLayout
-import android.widget.TextView
 import androidx.annotation.StringRes
 import kotlinx.android.synthetic.main.component_common_header_layout.view.*
 
