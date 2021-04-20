@@ -19,14 +19,15 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
 
 
     override fun onBackPressed() {
-        super.onBackPressed()
         cashButtonLayout?.onBackPressed(object : ICashButtonBackPressedListener {
             override fun onBackPressed(isSuccess: Boolean) {
                 if (isSuccess) {
                     finish()
                 }
             }
-        })
+        }) ?: run {
+            finish()
+        }
     }
 
 
@@ -38,10 +39,8 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
         initCommon()
         // endregion
         sw_notibar_state.setOnCheckedChangeListener(this)
-        sw_cashbutton_notibar_state.setOnCheckedChangeListener(this)
+        sw_cashbutton_state.setOnCheckedChangeListener(this)
         ly_inquire_container.setOnClickListener(this)
-
-
     }
 
 
@@ -50,44 +49,45 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
 
         /** initialize cashbutton view */
         CashButtonLayout.init(this@MainActivity, object : ICashButtonCallback {
-            override fun onSuccess(view: CashButtonLayout) {
+            override fun onSuccess(view: CashButtonLayout?) {
                 cashButtonLayout = view
             }
         })
-        CashButtonLayout.initInviteInfo("캐시 버튼에서 친구 초대를 사용할 때 사용하는 메시지입니다.")
-        sw_cashbutton_notibar_state.isChecked = CashButtonConfig.getCashButtonState()
+
+        sw_cashbutton_state.isChecked = CashButtonConfig.getCashButtonState()
+        sw_notibar_state.isChecked = CashButtonConfig.getAllowNotificationBar()
 
     }
 
 
     override fun onCheckedChanged(buttonView: CompoundButton?, isChecked: Boolean) {
         when (buttonView?.id) {
-            R.id.sw_notibar_state -> {
-                notibarRunnable = Runnable {
-                    CashButtonConfig.setCashButtonNotify(isChecked)
-                }
-                var notiR = NotibarWorkRunnable()
-                Thread(notiR).start()
-
-            }
-            R.id.sw_cashbutton_notibar_state -> {
+            R.id.sw_cashbutton_state -> {
                 cashbuttonAndNotibarRunnable = Runnable {
-                    CashButtonConfig.setCashButtonState(isChecked)
+                    if(isChecked){
+                        CashButtonConfig.setCashButtonSnoozeOff()
+                    } else {
+                        CashButtonConfig.setCashButtonSnoozeOn(1)
+                    }
+
                 }
                 var cashnotiR = CashbuttonAndNotibarWorkRunnable()
                 Thread(cashnotiR).start()
             }
-
+            R.id.sw_notibar_state -> {
+                notibarRunnable = Runnable {
+                    CashButtonConfig.setAllowNotificationBar(activity = this, value = isChecked)
+                }
+                var notiR = NotibarWorkRunnable()
+                Thread(notiR).start()
+            }
         }
-
     }
 
     
     override fun onClick(v: View?) {
         if(v?.id === R.id.ly_inquire_container){
-            // region { 캐시버튼 문의 }
             CashButtonConfig.actionSuggestion(this)
-            // endregion
         }
     }
 

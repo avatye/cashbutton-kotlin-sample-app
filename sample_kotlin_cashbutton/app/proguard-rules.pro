@@ -1,4 +1,5 @@
 # CASH-BUTTON-SDK
+-keeppackagenames
 -keep class com.avatye.sdk.cashbutton.** { *; }
 -dontwarn com.avatye.sdk.cashbutton.**
 

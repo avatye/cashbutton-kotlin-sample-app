@@ -21,7 +21,6 @@ class App : Application() {
         /** cash-button-config initializer */
         CashButtonConfig.initializer(
             application = this,
-            position = CashButtonPosition.END,
             notifyModel = notifyModel
         )
     }
