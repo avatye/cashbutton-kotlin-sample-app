@@ -31,6 +31,7 @@
             </intent-filter>
         </activity>
 
+        <!-- main -->
         <meta-data
             android:name="avatye_appid"
             android:value="91e4b7f81a6511ea813d0a4916b2361a" />
@@ -54,6 +55,7 @@
         <meta-data
             android:name="avatye_log"
             android:value="true" />
+
     </application>
 
 </manifest>

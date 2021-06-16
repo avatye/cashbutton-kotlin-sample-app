@@ -9,19 +9,7 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        /** cash-button-notify-model */
-        val notifyModel = CashNotifyModel(
-            context = this,
-            allowNotify = true,
-            name = "ADBalloonKOTLIN",
-            appIconResourceId = 0,
-            statusIconResourceId = 0
-        )
-
         /** cash-button-config initializer */
-        CashButtonConfig.initializer(
-            application = this,
-            notifyModel = notifyModel
-        )
+        CashButtonConfig.initializer(this)
     }
 }

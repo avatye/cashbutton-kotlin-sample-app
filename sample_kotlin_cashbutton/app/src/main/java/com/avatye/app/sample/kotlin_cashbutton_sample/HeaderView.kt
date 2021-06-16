@@ -41,23 +41,6 @@ class HeaderView : RelativeLayout {
         typedArray.recycle()
     }
 
-    override fun onFinishInflate() {
-        super.onFinishInflate()
-    }
-
-    fun setTitle(@StringRes stringRes: Int) {
-        tv_header_title.setText(stringRes)
-    }
-
-    fun setTitle(title: String) {
-        tv_header_title.text = title
-    }
-
-    fun setClose(listener: OnClickListener?) {
-        ly_header_close.visibility = VISIBLE
-        ly_header_close.setOnClickListener(listener)
-    }
-
     fun setBack(listener: OnClickListener?) {
         ly_header_back.visibility = VISIBLE
         ly_header_back.setOnClickListener(listener)
