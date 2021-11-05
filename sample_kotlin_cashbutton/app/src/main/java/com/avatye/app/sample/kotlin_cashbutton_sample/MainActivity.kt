@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             override fun onSuccess(view: CashButtonLayout?) {
                 cashButtonLayout = view
             }
-        })
+        }, false)
 
         component_header_view.setBack { onBackPressed() }
     }

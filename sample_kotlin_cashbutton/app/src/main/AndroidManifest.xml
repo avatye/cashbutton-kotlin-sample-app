@@ -31,6 +31,12 @@
             </intent-filter>
         </activity>
 
+        <!-- add the provider between the application tag -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+
         <!-- main -->
         <meta-data
             android:name="avatye_appid"
