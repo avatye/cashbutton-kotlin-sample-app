@@ -1,3 +1,4 @@
 include ':cashbutton'
 include ':cashscreen'
+include ':point_theme'
 rootProject.name = "sample_kotlin_cashbutton"

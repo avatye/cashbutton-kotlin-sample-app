@@ -1,13 +1,12 @@
 package com.avatye.app.sample.kotlin_cashbutton_sample
 
 import android.os.Bundle
-import android.os.Handler
-import android.util.Log
-import android.widget.CompoundButton
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.avatye.sdk.cashbutton.*
+import com.avatye.sdk.cashbutton.CashButtonConfig
+import com.avatye.sdk.cashbutton.ICashButtonBackPressedListener
+import com.avatye.sdk.cashbutton.ICashButtonCallback
 import com.avatye.sdk.cashbutton.ui.CashButtonLayout
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         // endregion
 
         // region { 캐시버튼 문의 }
-        ly_inquire_container.setOnClickListener {
+        findViewById<LinearLayout>(R.id.ly_inquire_container).setOnClickListener {
             CashButtonConfig.actionSuggestion(this)
         }
         // endregion
@@ -49,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             }
         }, false)
 
-        component_header_view.setBack { onBackPressed() }
+        findViewById<HeaderView>(R.id.component_header_view).setBack { onBackPressed() }
     }
 
 }

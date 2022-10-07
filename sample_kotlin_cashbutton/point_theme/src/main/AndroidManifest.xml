@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.avatye.aos.cashscreen">
+    package="com.avatye.aos.pointthem">
 
     <!-- 퍼미션 관련 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,24 +11,13 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".ScreenApplication"
+        android:name="com.avatye.aos.pointthem.PointThemApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        <meta-data
-            android:name="avatye_appid"
-            android:value="91e4b7f81a6511ea813d0a4916b2361a" />
-        <meta-data
-            android:name="avatye_appsecret"
-            android:value="aafc702323bf6a214" />
-        <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
-        <meta-data
-            android:name="avatye_market"
-            android:value="googleplay" />
+        android:theme="@style/Theme.Sample_kotlin_cashbutton">
 
         <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->
         <meta-data
@@ -36,13 +25,7 @@
             android:value="app-pub-150484850088628" />
 
         <activity
-            android:name=".TestActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".TestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.avatye.aos.pointthem.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

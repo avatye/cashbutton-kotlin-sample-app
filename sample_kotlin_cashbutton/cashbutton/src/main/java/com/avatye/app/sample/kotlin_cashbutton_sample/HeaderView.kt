@@ -5,8 +5,7 @@ import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.RelativeLayout
-import androidx.annotation.StringRes
-import kotlinx.android.synthetic.main.component_common_header_layout.view.*
+import android.widget.TextView
 
 class HeaderView : RelativeLayout {
 
@@ -33,16 +32,16 @@ class HeaderView : RelativeLayout {
 
 
         // visible
-        ly_header_close?.visibility = GONE
-        ly_header_back?.visibility = GONE
+        findViewById<RelativeLayout>(R.id.ly_header_close).visibility = GONE
+        findViewById<RelativeLayout>(R.id.ly_header_back)?.visibility = GONE
 
         //set TypedArray attributes
-        tv_header_title?.text = typedArray.getString(R.styleable.HeaderView_text)
+        findViewById<TextView>(R.id.tv_header_title).text = typedArray.getString(R.styleable.HeaderView_text)
         typedArray.recycle()
     }
 
     fun setBack(listener: OnClickListener?) {
-        ly_header_back.visibility = VISIBLE
-        ly_header_back.setOnClickListener(listener)
+        findViewById<RelativeLayout>(R.id.ly_header_back).visibility = VISIBLE
+        findViewById<RelativeLayout>(R.id.ly_header_back).setOnClickListener(listener)
     }
 }

@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.avatye.sdk.cashbutton.CashButtonChannelingConfig
 import com.avatye.sdk.cashbutton.core.cashscreen.CashScreenConfig
-import com.avatye.sdk.cashbutton.core.entity.cashmore.AvatyeUserData
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setUserData()
         addMenuItem()
 
         val screenBtn: Button = findViewById(R.id.screenbtn)
@@ -30,15 +27,6 @@ class MainActivity : AppCompatActivity() {
             setScreenBtnText()
         }
 
-    }
-
-    /** 유저 정보 추가 */
-    private fun setUserData() {
-        val phoneNumber = "" //테스트시 본인 번호 설정 후 진행
-
-        CashButtonChannelingConfig.userData = AvatyeUserData(
-            userID = "USERID_$phoneNumber", phoneNumber = phoneNumber, nickname = phoneNumber
-        )
     }
 
     /**
