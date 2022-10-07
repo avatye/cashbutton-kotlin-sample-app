@@ -6,4 +6,5 @@
 - PointThemApplication - 서비스 키 설정
 - 캐시버튼 채널링의 경우 MainActivity - phoneNumber 설정
 
-***서비스 변경 시 설치된 앱 삭제 후 새로 설치해주세요.**
+## 주의사항
+- **서비스 변경 시 설치된 앱 삭제 후 새로 설치**
