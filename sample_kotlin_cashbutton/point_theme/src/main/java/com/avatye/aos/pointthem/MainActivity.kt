@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
     /** 캐시버튼 일 떄 사용 */
     private var cashButtonLayout: CashButtonLayout? = null
 
+    /** 캐시버튼 채널링 테스트 시 본인 번호 설정 */
+    private val phoneNumber = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -62,7 +65,6 @@ class MainActivity : AppCompatActivity() {
 
     /** 캐시버튼 채널링 기본설정 */
     private fun initCashButtonChanneling() {
-        val phoneNumber = "01031005024" //테스트시 본인 번호 설정 후 진행
         val userData = AvatyeUserData(
             userID = "USERID_$phoneNumber", phoneNumber = phoneNumber, nickname = phoneNumber
         )

@@ -8,7 +8,7 @@ class PointThemApplication: Application() {
     override fun onCreate() {
         super.onCreate()
 
-        /** 갖고있는 서비스 키가 없다면 테스트 키로 확인 가능합니다.
+        /** 발급받은 서비스 키가 없다면 테스트 키로 적용해주세요.
          *
          *  캐시버튼 테스트 키
          *  appID = "91e4b7f81a6511ea813d0a4916b2361a", appSecret = "aafc702323bf6a214"
@@ -19,7 +19,5 @@ class PointThemApplication: Application() {
          *  서비스 변경 시 설치된 앱 삭제 후 새로 설치해주세요.
          * */
          CashButtonConfig.initializer(application = this, appID = "", appSecret = "")
-
-        CashButtonConfig.setDebugMode(true)
     }
 }
