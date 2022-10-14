@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CashButtonAcivity">
 
     <Button
-        android:id="@+id/StartCashButton"
+        android:id="@+id/CustomCashButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="50dp"
-        android:layout_above="@+id/StartCashButtonChanneling"
-        android:layout_centerInParent="true"
-        android:text="캐시버튼 서비스로 시작하기"/>
+        android:layout_above="@+id/CashScreen"
+        android:text="커스텀 캐시버튼 설정 X"/>
 
 
     <Button
-        android:id="@+id/StartCashButtonChanneling"
+        android:id="@+id/CashScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="캐시버튼 채널링 서비스"/>
+        android:text="잠금화면"/>
 
 </RelativeLayout>

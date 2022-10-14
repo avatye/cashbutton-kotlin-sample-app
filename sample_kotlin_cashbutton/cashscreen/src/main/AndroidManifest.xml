@@ -1,40 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.avatye.aos.cashscreen">
-
     <!-- 퍼미션 관련 -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- android target sdk 28 FOREGROUND_SERVICE -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- android target sdk 28 FOREGROUND_SERVICE -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".ScreenApplication"
+        android:name=".Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        <meta-data
-            android:name="avatye_appid"
-            android:value="91e4b7f81a6511ea813d0a4916b2361a" />
-        <meta-data
-            android:name="avatye_appsecret"
-            android:value="aafc702323bf6a214" />
         <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
         <meta-data
             android:name="avatye_market"
-            android:value="googleplay" />
-
-        <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->
+            android:value="googleplay" /> <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->
         <meta-data
             android:name="com.buzzvil.APP_KEY"
             android:value="app-pub-150484850088628" />
-
+        <activity
+            android:name=".CashButtonAcivity"
+            android:exported="false" />
+        <activity
+            android:name=".CashButtonChannelingActivity"
+            android:exported="false" />
         <activity
             android:name=".TestActivity2"
             android:exported="false" />

@@ -1,17 +1,19 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
 }
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.avatye.aos.cashbutton"
-        minSdkVersion 21
-        targetSdkVersion 33
+        applicationId "com.avatye.app.sample.kotlin_cashbutton_sample"
+        minSdkVersion 16
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -20,19 +22,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
 
 }
 
 dependencies {
-
-    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button:1.6.0-beta4'
+    implementation 'org.bitbucket.avatye:src_cashbutton_sdk_aos:1.5.53'
 
     /** androidx.appcompat:appcompat:x.x.x 을 사용하고 있지 않을 경우 추가 필요 */
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'

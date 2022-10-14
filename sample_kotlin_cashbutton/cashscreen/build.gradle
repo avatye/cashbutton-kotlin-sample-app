@@ -12,8 +12,6 @@ android {
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -30,14 +28,18 @@ android {
         jvmTarget = '1.8'
     }
 
+    ndkVersion "21.1.6352462"
 }
 
 dependencies {
 
-    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button-with-screen:1.6.0-beta'
+    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button-with-screen:1.6.0-beta4'
 
     /** androidx.appcompat:appcompat:x.x.x 을 사용하고 있지 않을 경우 추가 필요 */
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
 
     implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
