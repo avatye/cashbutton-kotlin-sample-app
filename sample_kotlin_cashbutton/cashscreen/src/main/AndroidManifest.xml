@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.Sample_kotlin_cashbutton">
         <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
         <meta-data
             android:name="avatye_market"
@@ -24,7 +24,7 @@
             android:name="com.buzzvil.APP_KEY"
             android:value="app-pub-150484850088628" />
         <activity
-            android:name=".CashButtonAcivity"
+            android:name=".CashButtonActivity"
             android:exported="false" />
         <activity
             android:name=".CashButtonChannelingActivity"

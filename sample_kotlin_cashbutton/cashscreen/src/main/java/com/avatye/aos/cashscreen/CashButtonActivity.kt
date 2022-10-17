@@ -15,7 +15,7 @@ import com.avatye.sdk.cashbutton.core.external.CashButtonEvent
 import com.avatye.sdk.cashbutton.core.external.ICashButtonBalanceListener
 import com.avatye.sdk.cashbutton.ui.CashButtonLayout
 
-class CashButtonAcivity : AppCompatActivity() {
+class CashButtonActivity : AppCompatActivity() {
 
     /** 캐시버튼 일 떄 사용 */
     private var cashButtonLayout: CashButtonLayout? = null
@@ -60,13 +60,14 @@ class CashButtonAcivity : AppCompatActivity() {
     /** 커스텀 캐시버튼 사용 시 설정 */
     private fun initCustomCashButton() {
         val customButtonView = findViewById<Button>(R.id.CustomCashButton)
+        customButtonView.isEnabled = true
 
         /** 코인, 캐시, 티켓 이벤트를 이용해 자유롭게 커스텀 가능 */
         balanceEventBuilder = CashButtonEvent.Builder(this)
             .addListener(object : ICashButtonBalanceListener {
                 @SuppressLint("SetTextI18n")
                 override fun onBalanceUpdate(coin: String, cash: Int, ticket: Int) {
-                    customButtonView.text = "캐시: $cash"
+                    customButtonView.text = coin
                 }
             }).build()
 
@@ -111,12 +112,12 @@ class CashButtonAcivity : AppCompatActivity() {
         CashScreenConfig.setLandingIntent(
             CashScreenConfig.ExtraMenuItem(
                 menuIconResID = R.drawable.avt_cm_ir_menu_exchange,
-                Intent(this@CashButtonAcivity, TestActivity::class.java),
+                Intent(this@CashButtonActivity, TestActivity::class.java),
                 "테스트1"
             ),
             CashScreenConfig.ExtraMenuItem(
                 menuIconResID = R.drawable.avt_cm_ir_menu_accumulate,
-                Intent(this@CashButtonAcivity, TestActivity2::class.java),
+                Intent(this@CashButtonActivity, TestActivity2::class.java),
                 "테스트2"
             )
         )

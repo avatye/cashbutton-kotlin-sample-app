@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CashButtonAcivity">
+    tools:context=".CashButtonActivity">
+
+    <Button
+        android:id="@+id/CustomCashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/CashScreen"
+        android:text="캐시버튼 채널링 실행"/>
 
     <Button
         android:id="@+id/CashScreen"

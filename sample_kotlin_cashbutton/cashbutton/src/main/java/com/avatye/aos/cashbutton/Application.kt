@@ -15,6 +15,7 @@ class Application : Application() {
          *  캐시버튼 채널링 테스트 키
          *  appID = "69f43822b64d46d6bc01ff6d282f754d", appSecret = "077b11dc468f4bd3"
          *
+         *  채널링의 경우 CashButtonChannelingActivity에서 phoneNumber를 반드시 설정해주셔야 하며,
          *  서비스 변경 시 설치된 앱 삭제 후 새로 설치해주세요.
          * */
         CashButtonConfig.initializer(application = this, appID = "", appSecret = "")

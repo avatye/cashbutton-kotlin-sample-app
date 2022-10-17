@@ -5,21 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/StartCashButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:layout_above="@+id/StartCashButtonChanneling"
-        android:layout_centerInParent="true"
-        android:text="캐시버튼 서비스로 시작하기"/>
-
-
-    <Button
-        android:id="@+id/StartCashButtonChanneling"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="캐시버튼 채널링 서비스"/>
+        android:text="더 이상 진행없이 멈춘 경우 재실행 부탁드립니다"/>
 
 </RelativeLayout>

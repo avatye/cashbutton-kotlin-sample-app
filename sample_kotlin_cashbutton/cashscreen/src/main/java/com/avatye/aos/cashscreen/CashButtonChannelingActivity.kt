@@ -29,7 +29,9 @@ class CashButtonChannelingActivity : AppCompatActivity() {
         initMenuItem()
         initCashScreenCustomButton()
 
-        CashButtonConfig.start(this)
+        findViewById<Button>(R.id.CustomCashButton).setOnClickListener {
+            CashButtonConfig.start(this)
+        }
     }
 
     /** 캐시버튼 채널링 기본설정 */
