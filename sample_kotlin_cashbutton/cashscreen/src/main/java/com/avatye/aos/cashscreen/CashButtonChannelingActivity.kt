@@ -1,19 +1,15 @@
 package com.avatye.aos.cashscreen
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.avatye.sdk.cashbutton.CashButtonConfig
 import com.avatye.sdk.cashbutton.IButtonCallback
-import com.avatye.sdk.cashbutton.ICashButtonBackPressedListener
-import com.avatye.sdk.cashbutton.ICashButtonCallback
 import com.avatye.sdk.cashbutton.core.cashscreen.CashScreenConfig
 import com.avatye.sdk.cashbutton.core.cashscreen.ICashScreenCallback
 import com.avatye.sdk.cashbutton.core.entity.cashmore.AvatyeUserData
 import com.avatye.sdk.cashbutton.core.widget.FloatingButtonLayout
-import com.avatye.sdk.cashbutton.ui.CashButtonLayout
 
 class CashButtonChannelingActivity : AppCompatActivity() {
 
@@ -46,11 +42,12 @@ class CashButtonChannelingActivity : AppCompatActivity() {
          * 채널링 서비스 이용 시 별도의 진입 점을 이용하지 않고
          * 기본 제공되는 버튼 진입점을 사용시 start를 호출하지 않고 show를 호출한다.
          * */
-         CashButtonConfig.show(activity = this@CashButtonChannelingActivity, object: IButtonCallback {
-             override fun onSuccess(view: FloatingButtonLayout?) {
+        CashButtonConfig.show(activity = this@CashButtonChannelingActivity,
+            object : IButtonCallback {
+                override fun onSuccess(view: FloatingButtonLayout?) {
 
-            }
-         })
+                }
+            })
     }
 
     /**

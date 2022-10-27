@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".CashButtonActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:text="KOTLIN SAMPLE"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_above="@+id/CustomCashButton" />
+
     <Button
         android:id="@+id/CustomCashButton"
         android:layout_width="wrap_content"

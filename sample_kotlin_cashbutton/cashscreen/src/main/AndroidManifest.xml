@@ -16,7 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sample_kotlin_cashbutton">
-        <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
+        <activity
+            android:name=".java.CashButtonChannelingActivityForJava"
+            android:exported="false" />
+        <activity
+            android:name=".java.CashButtonActivityForJava"
+            android:exported="false" /> <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
         <meta-data
             android:name="avatye_market"
             android:value="googleplay" /> <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->

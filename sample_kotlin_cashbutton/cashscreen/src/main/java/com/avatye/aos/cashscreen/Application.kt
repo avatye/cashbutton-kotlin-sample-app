@@ -22,5 +22,8 @@ class Application : Application() {
 
         /** 커스텀 캐시버튼 사용시에만 설정해주세요 */
 //        CashButtonConfig.useCustomCashButton = true
+
+        /** Java로 작성된 코드로 테스트를 원하시는 경우 설정해주세요 */
+//        MainActivity.startJavaSample = true
     }
 }

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginBottom="50dp"
-        android:text="KOTLIN SAMPLE"
+        android:text="JAVA SAMPLE"
         android:textSize="20dp"
         android:textColor="#000"
         android:layout_above="@+id/CustomCashButton" />

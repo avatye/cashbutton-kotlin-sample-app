@@ -7,12 +7,14 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import com.avatye.sdk.cashbutton.CashButtonConfig
+import com.avatye.sdk.cashbutton.IButtonCallback
 import com.avatye.sdk.cashbutton.ICashButtonBackPressedListener
 import com.avatye.sdk.cashbutton.ICashButtonCallback
 import com.avatye.sdk.cashbutton.core.cashscreen.CashScreenConfig
 import com.avatye.sdk.cashbutton.core.cashscreen.ICashScreenCallback
 import com.avatye.sdk.cashbutton.core.external.CashButtonEvent
 import com.avatye.sdk.cashbutton.core.external.ICashButtonBalanceListener
+import com.avatye.sdk.cashbutton.core.widget.FloatingButtonLayout
 import com.avatye.sdk.cashbutton.ui.CashButtonLayout
 
 class CashButtonActivity : AppCompatActivity() {
@@ -32,7 +34,11 @@ class CashButtonActivity : AppCompatActivity() {
         initMenuItem()
         initCashScreenCustomButton()
 
-        CashButtonConfig.start(this)
+        CashButtonConfig.show(this, object : IButtonCallback {
+            override fun onSuccess(view: FloatingButtonLayout?) {
+
+            }
+        })
     }
 
     /** 캐시버튼 기본설정 */
