@@ -17,13 +17,37 @@ class CashButtonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cash_button)
 
+
+        /** 캐시버튼 실행 시 바로 버튼 노출 */
         initCashButton()
 
-        CashButtonConfig.start(this)
+
+        /** 캐시버튼 실행 시 원하는 타이밍에 버튼 노출  */
+        // 캐시버튼 콜백 설정
+//        setCashButtonCallback()
+//        CashButtonConfig.start(this)
+
+
+        /**
+         * 캐시버튼 상태 설정
+         * @param useOverlayButton : 인앱 오버레이 기능 사용 유무
+         * @param startPositionX : X좌표
+         * @param startPositionY : Y좌표
+         */
+//        CashButtonConfig.setCashButtonOption(false)
     }
 
-    /** 캐시버튼 기본설정 */
     private fun initCashButton() {
+        CashButtonLayout.init(this, object : ICashButtonCallback {
+            override fun onSuccess(view: CashButtonLayout?) {
+                cashButtonLayout = view
+            }
+
+        }, false)
+    }
+
+
+    private fun setCashButtonCallback() {
         /** initialize cashbutton view */
         CashButtonConfig.cashButtonCallback = object : ICashButtonCallback {
             override fun onSuccess(view: CashButtonLayout?) {
