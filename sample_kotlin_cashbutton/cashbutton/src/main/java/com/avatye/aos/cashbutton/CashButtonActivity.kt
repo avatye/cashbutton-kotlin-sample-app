@@ -43,7 +43,7 @@ class CashButtonActivity : AppCompatActivity() {
                 cashButtonLayout = view
             }
 
-        }, false)
+        })
     }
 
 
