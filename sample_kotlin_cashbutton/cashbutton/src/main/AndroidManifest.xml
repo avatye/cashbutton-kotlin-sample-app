@@ -14,10 +14,10 @@
             android:name=".SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".CashButtonChannelingActivity"
+            android:name=".main.CashButtonChannelingActivity"
             android:exported="false" />
         <activity
-            android:name=".CashButtonActivity"
+            android:name=".main.CashButtonActivity"
             android:exported="false" /> <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
         <meta-data
             android:name="avatye_market"
@@ -27,7 +27,7 @@
             android:value="app-pub-150484850088628" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
