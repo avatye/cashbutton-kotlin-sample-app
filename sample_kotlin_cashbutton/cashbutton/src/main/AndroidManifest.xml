@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.avatye.aos.cashbutton">
 
     <application
@@ -10,6 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sample_kotlin_cashbutton">
+
+        <!-- Applovin 로그 -->
+<!--        <meta-data-->
+<!--            android:name="applovin.sdk.verbose_logging"-->
+<!--            android:value="true" />-->
+
+        <!-- Igaworks 로그 -->
+<!--        <meta-data-->
+<!--            android:name="enable_ap_log"-->
+<!--            android:value="enable" />-->
+
+
+        <!-- 캐시버튼 설정 -->
+        <meta-data
+            android:name="avatye_market"
+            android:value="googleplay" />  <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
+        <meta-data
+            android:name="com.buzzvil.APP_KEY"
+            android:value="app-pub-150484850088628" /> <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->
+        <!-- ============================================================================================================ -->
+
         <activity
             android:name=".SettingActivity"
             android:exported="false" />
@@ -18,14 +40,7 @@
             android:exported="false" />
         <activity
             android:name=".main.CashButtonActivity"
-            android:exported="false" /> <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
-        <meta-data
-            android:name="avatye_market"
-            android:value="googleplay" /> <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->
-        <meta-data
-            android:name="com.buzzvil.APP_KEY"
-            android:value="app-pub-150484850088628" />
-
+            android:exported="false" />
         <activity
             android:name=".main.MainActivity"
             android:exported="true">

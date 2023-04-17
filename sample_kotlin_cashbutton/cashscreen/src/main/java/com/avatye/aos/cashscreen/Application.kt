@@ -18,7 +18,7 @@ class Application : Application() {
          *  채널링의 경우 CashButtonChannelingActivity에서 phoneNumber를 반드시 설정해주셔야 하며,
          *  서비스 변경 시 설치된 앱 삭제 후 새로 설치해주세요.
          * */
-        CashButtonConfig.initializer(application = this, appID = "", appSecret = "")
+        CashButtonConfig.initializer(application = this, appID = "91e4b7f81a6511ea813d0a4916b2361a", appSecret = "aafc702323bf6a214")
 
         /** 커스텀 캐시버튼 사용시에만 설정해주세요 */
 //        CashButtonConfig.useCustomCashButton = true

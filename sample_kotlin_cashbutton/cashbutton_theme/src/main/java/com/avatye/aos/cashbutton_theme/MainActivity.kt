@@ -32,21 +32,21 @@ class MainActivity : AppCompatActivity() {
 
     private fun setPointTheme() {
         /** 지정 테마 */
-        CashButtonConfig.setPointTheme(PointThemeType.POINT)
-        CashButtonConfig.setPointTheme(PointThemeType.MILEAGE)
+//        CashButtonConfig.setPointTheme(PointThemeType.POINT)
+//        CashButtonConfig.setPointTheme(PointThemeType.MILEAGE)
 
         /** 사용자 커스텀 테마 (단위 모양 설정 불가) */
-        CashButtonConfig.setPointMark(
-            R.drawable.avtcb_coin_mark_p_unit,
-            "[ThemeName]"
-        )
+//        CashButtonConfig.setPointMark(
+//            R.drawable.avtcb_coin_mark_p_unit,
+//            "[ThemeName]"
+//        )
 
         /** 사용자 커스텀 테마 (단위 모양 설정 가능) */
         CashButtonConfig.setCustomPointTheme(
-            R.drawable.avtcb_coin_stroke_unit,
-            R.drawable.avtcb_coin_fill_unit,
-            R.drawable.avtcb_coin_mark_p_unit,
-            "[ThemeName]"
+            strokeIconResId = R.drawable.avtcb_coin_stroke_unit,
+            fillIconResId = R.drawable.avtcb_coin_fill_unit,
+            markIconResId = R.drawable.avtcb_coin_mark_m_unit,
+            name = "[ThemeName]"
         )
     }
 

@@ -62,7 +62,7 @@ class CashButtonActivity : AppCompatActivity() {
         CashButtonLayout.init(this, object : ICashButtonCallback {
             override fun onSuccess(view: CashButtonLayout?) {
                 cashButtonLayout = view
-                custom()
+                setCustomCashButton()
             }
 
         })
@@ -95,7 +95,7 @@ class CashButtonActivity : AppCompatActivity() {
     }
 
 
-    private fun custom(){
+    private fun setCustomCashButton(){
         val targetView = findViewById<Button>(R.id.CustomCashButton)
         val targetTextView = findViewById<TextView>(R.id.tvCoin)
 

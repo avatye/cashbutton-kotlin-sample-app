@@ -10,13 +10,14 @@ import com.avatye.aos.cashbutton.R
 import com.avatye.aos.cashbutton.SettingActivity
 import com.avatye.sdk.cashbutton.CashButtonConfig
 import com.avatye.sdk.cashbutton.IButtonCallback
+import com.avatye.sdk.cashbutton.ICashButtonChannelingCallback
 import com.avatye.sdk.cashbutton.core.entity.cashmore.AvatyeUserData
 import com.avatye.sdk.cashbutton.core.widget.FloatingButtonLayout
 
 class CashButtonChannelingActivity : AppCompatActivity() {
 
     /** 캐시버튼 채널링 테스트 시 본인 번호 설정 */
-    private val phoneNumber = "01077915153"
+    private val phoneNumber = ""
 
     private var floatingButtonLayout: FloatingButtonLayout? = null
 
@@ -76,6 +77,20 @@ class CashButtonChannelingActivity : AppCompatActivity() {
 
     private fun startButton() {
         CashButtonConfig.start(this)
+    }
+
+
+
+    private fun setCashButtonChannelingCallback() {
+        /** set CashButton-Channeling-Callback */
+        CashButtonConfig.cashButtonChannelingCallback = object : ICashButtonChannelingCallback {
+            override fun onSuccess() {
+
+            }
+            override fun onFailure() {
+
+            }
+        }
     }
 
 
