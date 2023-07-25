@@ -16,13 +16,17 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -31,11 +35,62 @@ android {
 }
 
 dependencies {
-    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button:1.7.1.139'
+    def adxSdkVersion = '2.3.5'
+
+    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button:1.7.7.147'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.21'
+    implementation('com.github.bumptech.glide:glide:4.15.1')
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+
+//    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+
+//    implementation ('org.bitbucket.avatye.src_cashbutton_sdk_aos:button:1.6.12.128') {
+//        // 광고모듈 테스트z
+//        exclude group: 'com.pangle.global', module: 'ads-sdk'
+//        exclude group: 'com.kakao.adfit', module: 'ads-base'
+//        exclude group: 'org.bitbucket.avatye.src_cashbutton_sdk_aos', module: 'archive-ads-applovin'
+//
+//        // 광고모듈 테스트
+//        exclude group: 'com.facebook.android', module: 'audience-network-sdk'
+//        exclude group: 'com.unity3d.ads', module: 'unity-ads'
+//        exclude group: 'com.vungle', module: 'publisher-sdk-android'
+//    }
+
+
+
+//    implementation 'com.applovin:applovin-sdk:11.6.0'
+//    implementation 'com.igaworks.ssp:IgawAdPopcornSSP:3.1.10'
+
+
+
+
+    /**
+     * adxcorp ===========================================================================================
+     * 일반
+     * */
+//    implementation ("com.github.adxcorp.ADXLibrary_Android:adx-library-native:$adxSdkVersion"){
+//        exclude group: 'com.github.adxcorp.ADXLibrary_Android', module: 'adx-library-pangle'
+////        exclude group: 'com.applovin', module: 'applovin-sdk'
+//    }
+    // =================================================================================================
+
+
+
+    /**
+     * adiscope ===========================================================================================
+     * */
+    // [required] adiscope library
+//    implementation 'com.nps.adiscope:adiscopeCore:2.1.7.2'
+//    implementation 'com.nps.adiscope:adiscopeAndroid:1.1.7'
+//    implementation 'com.nps.adiscope:adapter.vungle:6.12.1.0'
+    // =================================================================================================
+
+
     /** androidx.appcompat:appcompat:x.x.x 을 사용하고 있지 않을 경우 추가 필요 */
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
-
-    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
-
 
 }

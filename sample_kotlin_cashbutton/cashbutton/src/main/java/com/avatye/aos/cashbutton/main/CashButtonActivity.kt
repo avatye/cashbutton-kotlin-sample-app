@@ -9,7 +9,6 @@ import com.avatye.aos.cashbutton.R
 import com.avatye.sdk.cashbutton.CashButtonConfig
 import com.avatye.sdk.cashbutton.ICashButtonBackPressedListener
 import com.avatye.sdk.cashbutton.ICashButtonCallback
-import com.avatye.sdk.cashbutton.ICashButtonViewStateListener
 import com.avatye.sdk.cashbutton.ui.CashButtonLayout
 
 class CashButtonActivity : AppCompatActivity() {
