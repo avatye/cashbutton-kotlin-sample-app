@@ -32,7 +32,7 @@ android {
 
 dependencies {
 
-    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button:1.6.12.128'
+    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button-with-screen:1.7.9.150'
     /** androidx.appcompat:appcompat:x.x.x 을 사용하고 있지 않을 경우 추가 필요 */
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
 

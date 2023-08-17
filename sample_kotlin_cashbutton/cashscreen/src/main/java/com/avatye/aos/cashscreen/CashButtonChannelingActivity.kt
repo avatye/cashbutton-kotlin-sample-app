@@ -14,7 +14,7 @@ import com.avatye.sdk.cashbutton.core.widget.FloatingButtonLayout
 class CashButtonChannelingActivity : AppCompatActivity() {
 
     /** 캐시버튼 채널링 테스트 시 본인 번호 설정 */
-    private val phoneNumber = ""
+    private val phoneNumber = "01077915154"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,7 +59,7 @@ class CashButtonChannelingActivity : AppCompatActivity() {
 
         screenBtn.setOnClickListener {
             if (CashScreenConfig.isOn) {
-                CashScreenConfig.stop()
+                CashScreenConfig.stop {}
             } else {
                 CashScreenConfig.start(this)
             }

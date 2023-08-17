@@ -22,6 +22,9 @@ import com.avatye.sdk.cashbutton.core.external.ICashButtonBalanceListener;
 import com.avatye.sdk.cashbutton.core.widget.FloatingButtonLayout;
 import com.avatye.sdk.cashbutton.ui.CashButtonLayout;
 
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+
 public class CashButtonActivityForJava extends AppCompatActivity {
 
     /**
@@ -105,7 +108,7 @@ public class CashButtonActivityForJava extends AppCompatActivity {
 
         screenBtn.setOnClickListener(view -> {
             if (CashScreenConfig.INSTANCE.isOn()) {
-                CashScreenConfig.INSTANCE.stop();
+                CashScreenConfig.INSTANCE.stop(() -> null);
             } else {
                 CashScreenConfig.INSTANCE.start(CashButtonActivityForJava.this);
             }

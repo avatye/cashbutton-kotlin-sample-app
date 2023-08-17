@@ -17,6 +17,9 @@ import com.avatye.sdk.cashbutton.core.cashscreen.ICashScreenCallback;
 import com.avatye.sdk.cashbutton.core.entity.cashmore.AvatyeUserData;
 import com.avatye.sdk.cashbutton.core.widget.FloatingButtonLayout;
 
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+
 public class CashButtonChannelingActivityForJava extends AppCompatActivity {
 
     /**
@@ -72,7 +75,7 @@ public class CashButtonChannelingActivityForJava extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (CashScreenConfig.INSTANCE.isOn()) {
-                    CashScreenConfig.INSTANCE.stop();
+                    CashScreenConfig.INSTANCE.stop(() -> null);
                 } else {
                     CashScreenConfig.INSTANCE.start(CashButtonChannelingActivityForJava.this);
                 }
