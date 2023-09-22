@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".main.CashButtonChannelingActivity">
+
+    <Button
+        android:id="@+id/launch_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#8c9eff"
+        android:text="Launch-Activity" />
+
+    <Button
+        android:id="@+id/launch_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="커스텀 캐시버튼 실행"/>
+
+
+    <TextView
+        android:id="@+id/tvCoinTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="유저가 버튼에서 받을 수 있는 캐시(Coin):  " />
+
+    <TextView
+        android:id="@+id/tvCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        tools:text="20" />
+
+</LinearLayout>

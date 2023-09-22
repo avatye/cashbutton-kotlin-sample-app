@@ -1,0 +1,78 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.sudal.cashbutton_2_0'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.sudal.cashbutton_2_0"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+//        compose true
+        viewBinding true
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.avatye.cashbutton.skp:product-button:2.0.0.202'
+
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0'
+    implementation('com.github.bumptech.glide:glide:4.15.1')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+
+    /** androidx.appcompat:appcompat:x.x.x 을 사용하고 있지 않을 경우 추가 필요 */
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+
+    // default
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+//    implementation 'androidx.activity:activity-compose:1.5.1'
+//    implementation platform('androidx.compose:compose-bom:2022.10.00')
+//    implementation 'androidx.compose.ui:ui'
+//    implementation 'androidx.compose.ui:ui-graphics'
+//    implementation 'androidx.compose.ui:ui-tooling-preview'
+//    implementation 'androidx.compose.material3:material3'
+//    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+//    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+//    debugImplementation 'androidx.compose.ui:ui-tooling'
+//    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">cashbutton_2_0</string>
+    <string name="preference_file_key">preference_file_key</string>
+    <string name="saved__key_is_show_button">Cashbutton</string>
+</resources>
