@@ -35,12 +35,9 @@ android {
 }
 
 dependencies {
-    def adxSdkVersion = '2.3.5'
 
     // CashButton
-//    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button:1.7.9.150'
-    implementation 'com.avatye.cashbutton.skp:product-button:2.0.0.202'
-    
+    implementation 'org.bitbucket.avatye.src_cashbutton_sdk_aos:button:1.7.9.150'
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
