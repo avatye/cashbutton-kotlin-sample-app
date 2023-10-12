@@ -27,13 +27,13 @@ class Application : Application() {
 
 
         CashButtonSDK(
-            application = this, appId = "02748f8a10e0455289a5cc42cbd91520", appSecret = "52baf3df979d494c"
+            application = this, appId = "079a64230e6c4d55b3b1fa9428b632c7", appSecret = "4fbe55ddbb8047e0"
         ).apply {
             // debug-mode
             setUseDebug(use = true)
 
             // point-theme
-            setPointType(pointType = PointType.POINT)
+            setPointType(pointType = PointType.MILEAGE)
 
             // notification-resource
             setNotificationBarResourceIcon(

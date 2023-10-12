@@ -33,7 +33,7 @@ class CashButtonChannelingActivity : AppCompatActivity() {
          * launchFloating : 전체화면 형태
          * launchButton : 대시보드 형태
          */
-        val channelingUser = ChannelingUser(userID = PerfRepository.userid)
+        val channelingUser = ChannelingUser(userID = PerfRepository.userid, phoneNumber = PerfRepository.userid + "-12345", nickname = "nick_" + PerfRepository.userid)
         val builder = LaunchChannelingBuilder.Builder(context = this@CashButtonChannelingActivity, channelingUser = channelingUser)
         builder.build(listener = object : LaunchChannelingBuilder.IBuilderListener {
             override fun onSuccess(builder: LaunchChannelingBuilder) {
