@@ -26,6 +26,8 @@ allprojects {
 
         // 2.0
         maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-SKP/maven/" }
+        maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton/maven/" }
+        maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-Internal/maven/" }
         maven {
             url "s3://repo.cauly.net/releases"
             credentials(AwsCredentials) {

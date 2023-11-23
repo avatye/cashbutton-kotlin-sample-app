@@ -27,7 +27,7 @@ class Application : Application() {
 
 
         CashButtonSDK(
-            application = this, appId = "079a64230e6c4d55b3b1fa9428b632c7", appSecret = "4fbe55ddbb8047e0"
+            application = this, appId = "91e4b7f81a6511ea813d0a4916b2361a", appSecret = "aafc702323bf6a214"
         ).apply {
             // debug-mode
             setUseDebug(use = true)

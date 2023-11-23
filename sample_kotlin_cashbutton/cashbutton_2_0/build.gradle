@@ -49,7 +49,8 @@ android {
 }
 
 dependencies {
-    implementation 'com.avatye.cashbutton.skp:product-button:2.0.0.202'
+//    implementation 'com.avatye.cashbutton.skp:product-button:2.0.0.202'
+    implementation 'com.avatye.cashbutton:product-button:2.0.1.211'
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
