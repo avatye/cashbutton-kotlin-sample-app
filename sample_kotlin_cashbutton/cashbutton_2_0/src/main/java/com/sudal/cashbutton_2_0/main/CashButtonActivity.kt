@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.avatye.cashbutton.product.button.LaunchButtonBuilder
+import com.avatye.sdk.cashbutton.CashButtonConfig
 import com.avatye.sdk.cashbutton.ICashButtonBackPressedListener
 import com.avatye.sdk.cashbutton.launcher.listener.ILaunchButtonListener
 import com.avatye.sdk.cashbutton.launcher.listener.ILaunchCustomViewListener
@@ -42,7 +43,7 @@ class CashButtonActivity : AppCompatActivity() {
                 launchButton(builder = builder)
 
                 // custom-button
-                launchCustomView(builder = builder)
+//                launchCustomView(builder = builder)
             }
 
             override fun onFailure(reason: String) {
@@ -54,9 +55,11 @@ class CashButtonActivity : AppCompatActivity() {
     private fun launchButton(builder: LaunchButtonBuilder) {
         builder.launchButton(
             ownerActivity = this@CashButtonActivity,
+            useStartWithInVisible = true,
             listener = object : ILaunchButtonListener {
                 override fun onSuccess(view: CashButtonLayout?) {
                     cashButtonLayout = view
+                    CashButtonConfig.useCustomCashButton = true
                 }
 
                 override fun onFailure(reason: String) {
@@ -68,12 +71,16 @@ class CashButtonActivity : AppCompatActivity() {
                 }
             }
         )
+
+        binding.btShowCashbutton.setOnClickListener {
+            cashButtonLayout?.showDashBoard()
+        }
     }
 
     private fun launchCustomView(builder: LaunchButtonBuilder) {
         builder.launchCustomView(
             ownerActivity = this@CashButtonActivity,
-            customView = binding.launchCustom,
+            customView = null,
             listener = object : ILaunchCustomViewListener {
                 override fun onSuccess(view: CashButtonLayout?) {
 
