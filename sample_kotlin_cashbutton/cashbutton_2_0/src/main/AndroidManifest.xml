@@ -37,6 +37,9 @@
         <meta-data
             android:name="com.buzzvil.APP_KEY"
             android:value="app-pub-150484850088628" /> <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->
+        <meta-data
+            android:name="avatye_log"
+            android:value="true" />
         <!-- ============================================================================================================ -->
 
         <activity

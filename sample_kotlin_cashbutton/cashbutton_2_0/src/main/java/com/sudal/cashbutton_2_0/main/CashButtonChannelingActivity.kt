@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.avatye.cashbutton.product.button.LaunchChannelingBuilder
+import com.avatye.sdk.cashbutton.ICashButtonBackPressedListener
 import com.avatye.sdk.cashbutton.core.widget.FloatingButtonLayout
 import com.avatye.sdk.cashbutton.launcher.entity.ChannelingUser
 import com.avatye.sdk.cashbutton.launcher.listener.ILaunchButtonListener
@@ -23,6 +24,18 @@ class CashButtonChannelingActivity : AppCompatActivity() {
     private var cashButtonLayout: CashButtonLayout? = null
     private var floatingButtonLayout: FloatingButtonLayout? = null
     private var customViewCashButtonLayout: CashButtonLayout? = null
+
+    override fun onBackPressed() {
+        cashButtonLayout?.onBackPressed(object : ICashButtonBackPressedListener {
+            override fun onBackPressed(isSuccess: Boolean) {
+                if (isSuccess) {
+                    finish()
+                }
+            }
+        }) ?: run {
+            super.onBackPressed()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -5,3 +5,4 @@ include ':cashbutton_theme'
 rootProject.name = "sample_kotlin_cashbutton"
 include ':cashbutton_2_0'
 include ':cashbutton_skp'
+include ':cashbutton_webview'

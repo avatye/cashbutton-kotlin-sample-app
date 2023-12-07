@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:adjustViewBounds="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/avatar_image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="- 캐시버튼 채널링 테스트앱 입니다 -"
+        android:textColor="#212121"
+        android:textSize="14dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/profile_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/profile_userid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ECECEC"
+            android:padding="10dp"
+            android:textColor="#212121"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/start"
+            style="@style/Avatye.Widget.Button.t01"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SRTART" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/logout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/login_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLength="20"
+            android:textColor="#212121"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/Avatye.Widget.Button.t01"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="login" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

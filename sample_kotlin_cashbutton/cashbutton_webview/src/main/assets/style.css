@@ -1,0 +1,36 @@
+button {
+  display: block;
+  margin: auto;
+    background-color: #fa5858;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.centered-image {
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Acme", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: #fa5858;
+}
+
+h2 {
+  font-family: "Acme", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+  color: #282828;
+}
+
+h3 {
+  font-family: "Acme", sans-serif;
+  color: black;
+  text-shadow: 3px 3px 10px #9cecfb;
+  font-size: 17px;
+  border-bottom: 1px solid #d7dde8;
+}

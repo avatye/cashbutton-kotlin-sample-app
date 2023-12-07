@@ -27,7 +27,9 @@ class CashButtonActivity : AppCompatActivity() {
                     finish()
                 }
             }
-        })
+        }) ?: run {
+            super.onBackPressed()
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
