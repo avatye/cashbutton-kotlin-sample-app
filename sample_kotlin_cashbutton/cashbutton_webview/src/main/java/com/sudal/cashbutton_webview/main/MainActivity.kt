@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
                 // 캐시버튼 채널링
                 SDKType.CHANNELING, SDKType.CHANNELING_DIRECT, SDKType.CHANNELING_DIRECT2 -> {
-                    startActivity(Intent(this@MainActivity, CashButtonChannelingActivity::class.java))
+                    startActivity(Intent(this@MainActivity, LoginActivity::class.java))
                     finish()
                 }
             }

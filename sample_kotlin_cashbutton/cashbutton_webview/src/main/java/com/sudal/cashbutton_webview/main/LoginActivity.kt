@@ -21,8 +21,7 @@ class LoginActivity : AppCompatActivity() {
         viewBind()
         // event
         vb.start.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
+            startActivity(Intent(this, CashButtonChannelingActivity::class.java))
         }
         vb.loginButton.setOnClickListener {
             val loginID = vb.loginId.text.toString().trim()
