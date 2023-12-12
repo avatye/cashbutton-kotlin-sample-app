@@ -68,39 +68,5 @@ dependencies {
 
 
     // Cashbutton (Maven)
-//    implementation 'com.avatye.cashbutton:product-button:2.0.1.212'
-    // CashButton (AAR 사용할 경우)
-    implementation files('libs/archive-ads-applovin-2.0.1.211.aar')
-    implementation files('libs/archive-ads-mezzomedia-2.0.1.211.aar')
-    implementation files('libs/core-service-button-2.0.1.211.aar')
-    implementation files('libs/core-library-support-2.0.1.211.aar')
-    implementation files('libs/core-service-button-2.0.1.211.aar')
-    implementation files('libs/plug-benefit-2.0.1.211.aar')
-    implementation files('libs/product-button-2.0.1.211.aar')
-    implementation files('libs/archive-ads-applovin-2.0.1.211.aar')
-    implementation "com.buzzvil:buzzad-benefit:3.45.+"
-    implementation "com.buzzvil:buzz-settings-monitor:2.31.0"
-    implementation("androidx.fragment:fragment-ktx:1.5.7")
-    implementation("androidx.work:work-runtime-ktx:2.7.0")
-    implementation("androidx.appcompat:appcompat:1.4.2")
-    implementation("com.google.android.material:material:1.6.1")
-    implementation("com.google.android.gms:play-services-appset:16.0.2")
-    implementation("com.google.android.gms:play-services-basement:18.1.0")
-    implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
-    implementation("joda-time:joda-time:2.10.14")
-    implementation("com.google.zxing:core:3.4.0")
-    implementation("com.github.bumptech.glide:glide:4.15.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.2")
-    implementation("androidx.dynamicanimation:dynamicanimation:1.0.0")
-    implementation("com.igaworks.ssp:IgawAdPopcornSSP:3.2.3")
-    implementation("com.kakao.adfit:ads-base:3.12.9")
-    implementation("com.naver.gfpsdk:nam-bom:4.4.0")
-    implementation("com.applovin:applovin-sdk:11.6.0")
-    implementation("com.fsn.cauly:cauly-sdk:3.5.24")
-    implementation("com.facebook.android:audience-network-sdk:6.11.0")
-    implementation("com.fyber:marketplace-sdk:8.1.0")
-    implementation("io.github.mobon:mobonSDK:1.0.0.54")
-    implementation("com.pangle.global:ads-sdk:5.0.0.7")
-    implementation("com.unity3d.ads:unity-ads:4.6.0")
-    implementation("com.vungle:publisher-sdk-android:6.11.0")
+    implementation 'com.avatye.cashbutton:product-button:2.0.1.212'
 }
