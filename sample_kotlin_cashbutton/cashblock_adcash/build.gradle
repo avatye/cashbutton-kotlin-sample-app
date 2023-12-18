@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.sudal.cashbutton_skp'
+    namespace 'com.sudal.cashblock_adcash'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.sudal.cashbutton_skp"
+        applicationId "com.sudal.cashblock_adcash"
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -49,8 +49,7 @@ android {
 }
 
 dependencies {
-//    implementation 'com.avatye.cashbutton.skp:product-button:2.0.0.202'
-    implementation 'com.avatye.cashbutton.skp:product-button:2.0.0.212'
+    implementation 'com.avatye.cashblock:unit-adcash:2.0.0.14'
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
@@ -61,6 +60,7 @@ dependencies {
 
     /** androidx.appcompat:appcompat:x.x.x 을 사용하고 있지 않을 경우 추가 필요 */
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
 
 
     // default

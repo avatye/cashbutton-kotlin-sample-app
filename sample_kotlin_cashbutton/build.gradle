@@ -23,11 +23,6 @@ allprojects {
         maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
         maven { url 'https://artifact.bytedance.com/repository/pangle' }
         maven { url "https://raw.githubusercontent.com/coupang-ads-sdk/android/main" }
-
-        // 2.0
-        maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-SKP/maven/" }
-        maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton/maven/" }
-        maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-Internal/maven/" }
         maven {
             url "s3://repo.cauly.net/releases"
             credentials(AwsCredentials) {
@@ -35,6 +30,16 @@ allprojects {
                 secretKey "SGOr65MOJeKBUFxeVNZ4ogITUKvcltWqEApC41JL"
             }
         }
+        // CashButton SKP
+        maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-SKP/maven/" }
+        // CashButton
+        maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton/maven/" }
+        // CashButton Internal
+        maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-Internal/maven/" }
+
+        // CashBlock ADCash
+        maven { url 'https://dl.cloudsmith.io/public/avatye/Android-CashBlock/maven/' }
+
         flatDir {
             dirs 'libs'
         }
