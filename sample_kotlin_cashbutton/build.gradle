@@ -30,6 +30,11 @@ allprojects {
                 secretKey "SGOr65MOJeKBUFxeVNZ4ogITUKvcltWqEApC41JL"
             }
         }
+        flatDir {
+            dirs 'libs'
+        }
+
+
         // CashButton SKP
         maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-SKP/maven/" }
         // CashButton
@@ -37,12 +42,9 @@ allprojects {
         // CashButton Internal
         maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-Internal/maven/" }
 
-        // CashBlock ADCash
-        maven { url 'https://dl.cloudsmith.io/public/avatye/Android-CashBlock/maven/' }
 
-        flatDir {
-            dirs 'libs'
-        }
+        // CashBlock ADCash, CashBox
+        maven { url 'https://dl.cloudsmith.io/public/avatye/Android-CashBlock/maven/' }
     }
 
 }

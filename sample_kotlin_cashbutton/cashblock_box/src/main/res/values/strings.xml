@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CashBlock_box</string>
+    <string name="preference_file_key">preference_file_key</string>
+
+    <string name="adcash_baaner_pid">1394f33f-9065-46d9-8c98-8e2a18472c02</string>
+    <string name="adcash_open_interstitial_baaner_pid">a36ee2f8-0e01-4f27-b3fc-b56ac02b8691</string>
+    <string name="adcash_open_reward_interstitial_baaner_pid">3ba0aecb-9b82-45eb-a276-14d521b66f8a</string>
+    <string name="adcash_close_interstitial_baaner_pid">f608e162-afd2-4099-944a-a3e600b994b6</string>
+    <string name="adcash_bottom_linear_common_baaner_pid">ef43d476-eb84-4a76-9a42-265085888c41</string>
+    <string name="adcash_bottom_linear_320x100_baaner_pid">1b2c0622-237c-411c-8952-159a11a296ff</string>
+    <string name="adcash_nam_baaner_pid">a2ee6725-4e1e-43bc-9765-77db5e4e2888</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+    <Button
+        android:id="@+id/bt_cashbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="캐시 박스" />
+
+    <Button
+        android:id="@+id/banner_loader_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="팝팝박스" />
+
+
+    <Button
+        android:id="@+id/interstital_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="전면 광고" />
+
+    <Button
+        android:id="@+id/reward_interstital_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="리워드 전면 광고" />
+
+
+</LinearLayout>
