@@ -44,7 +44,7 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat" />
         <activity
-            android:name=".main.CashBoxActivity"
+            android:name=".main.LineNewsActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat" />
         <activity

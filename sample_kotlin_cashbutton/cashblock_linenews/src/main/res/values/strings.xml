@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CashBlock_Linenews</string>
+    <string name="preference_file_key">preference_file_key</string>
+
+    <string name="linenews_placement_id">047ef940-37a1-45e9-a3fa-3a6cda9f11c5</string>
+
+    <string name="linenews_placement_dev_id">a61fff8e-4df7-4cd1-af38-22b4e6a5575d</string>
+    <string name="linenews_placement_test_id">1f234d48-fa52-4419-b9b3-a88fa17994ff</string>
+</resources>
