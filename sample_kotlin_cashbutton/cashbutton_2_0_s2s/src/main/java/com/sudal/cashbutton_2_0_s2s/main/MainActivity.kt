@@ -1,4 +1,4 @@
-package com.sudal.cashbutton_2_0.main
+package com.sudal.cashbutton_2_0_s2s.main
 
 import android.content.Intent
 import android.os.Bundle

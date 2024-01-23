@@ -41,6 +41,8 @@ allprojects {
         maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton/maven/" }
         // CashButton Internal
         maven { url "https://dl.cloudsmith.io/public/avatye/Android-CashButton-Internal/maven/" }
+        // CashButton Buzzvil(S2S)
+        maven { url "https://dl.cloudsmith.io/public/avatye/android-cashbutton-buzzvil/maven/" }
 
 
         // CashBlock ADCash, CashBox, LineNews
