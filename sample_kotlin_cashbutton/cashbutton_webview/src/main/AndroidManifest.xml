@@ -25,9 +25,9 @@
         <!--            android:value="true" />-->
 
         <!-- Igaworks 로그 -->
-        <!--        <meta-data-->
-        <!--            android:name="enable_ap_log"-->
-        <!--            android:value="enable" />-->
+        <meta-data
+            android:name="enable_ap_log"
+            android:value="enable" />
 
 
         <!-- 캐시버튼 설정 -->
