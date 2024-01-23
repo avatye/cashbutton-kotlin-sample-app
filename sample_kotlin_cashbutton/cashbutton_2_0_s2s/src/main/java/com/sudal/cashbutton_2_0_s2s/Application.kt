@@ -3,6 +3,7 @@ package com.sudal.cashbutton_2_0_s2s
 import android.app.Application
 import android.widget.Toast
 import com.avatye.cashbutton.product.button.CashButtonSDK
+import com.avatye.sdk.cashbutton.launcher.entity.BuzzAdsMID
 import com.avatye.sdk.cashbutton.launcher.entity.MarketType
 import com.avatye.sdk.cashbutton.launcher.entity.PointType
 
@@ -30,6 +31,14 @@ class Application : Application() {
         ).apply {
             // debug-mode
             setUseDebug(use = true)
+
+            setBuzzAdsMID(
+                BuzzAdsMID(
+                    nativeMID = "0fbe7a0b-04e8-4a82-8c32-d20bb5155ecd",
+                    feedContentMID = "5dea2f82-4f1a-4850-99b1-cbda830b7225",
+                    feedShoppingMID = "e4b81c69-0e8d-49a6-ba6b-22d75d4ffa77"
+                )
+            )
 
             // point-theme
             setPointType(pointType = PointType.MILEAGE)

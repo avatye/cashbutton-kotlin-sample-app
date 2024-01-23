@@ -40,6 +40,10 @@
         <meta-data
             android:name="avatye_log"
             android:value="true" />
+
+        <meta-data
+            android:name="avatye_api"
+            android:value="api-test" />
         <!-- ============================================================================================================ -->
 
         <activity
