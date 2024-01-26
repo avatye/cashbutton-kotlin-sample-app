@@ -49,7 +49,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.avatye.cashbutton.buzzvil:product-button:2.1.0.224'
+    implementation ('com.avatye.cashbutton.buzzvil:product-button:2.1.0.225') {
+//        exclude group: 'com.avatye.cashbutton.buzzvil', module:'archive-ads-mezzomedia'
+    }
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
