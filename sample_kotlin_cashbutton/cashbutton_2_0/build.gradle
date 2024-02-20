@@ -50,10 +50,10 @@ android {
 
 dependencies {
 
-    implementation("com.avatye.cashbutton:product-button:2.1.0.225") {
-        exclude group: 'com.igaworks.ssp', module: 'IgawAdPopcornSSP'
-        exclude group: 'com.avatye.cashbutton', module: 'archive-ads-mezzomedia'
-        exclude group: 'com.avatye.cashbutton', module: 'archive-ads-applovin'
+    implementation("com.avatye.cashbutton:product-button:2.1.0.226") {
+//        exclude group: 'com.igaworks.ssp', module: 'IgawAdPopcornSSP'
+//        exclude group: 'com.avatye.cashbutton', module: 'archive-ads-mezzomedia'
+//        exclude group: 'com.avatye.cashbutton', module: 'archive-ads-applovin'
     }
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
