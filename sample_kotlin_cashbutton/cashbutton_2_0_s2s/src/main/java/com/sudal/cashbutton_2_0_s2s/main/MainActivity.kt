@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
                 // None
                 SDKType.NONE -> {
-                    startActivity(Intent(this@MainActivity, CashButtonActivity::class.java))
+                    startActivity(Intent(this@MainActivity, CashButtonChannelingActivity::class.java))
                 }
             }
         }, 500)
