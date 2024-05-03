@@ -49,8 +49,9 @@ android {
 }
 
 dependencies {
-    implementation ('com.avatye.cashbutton.buzzvil:product-button:B2.2.233') {
-//        exclude group: 'com.avatye.cashbutton.buzzvil', module:'archive-ads-mezzomedia'
+    // cashbutton
+    implementation ('com.avatye.cashbutton:product-button:3.0.0.300') {
+        exclude group: 'com.avatye.cashbutton', module: 'archive-ads-mezzomedia'
     }
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
@@ -67,14 +68,27 @@ dependencies {
     // default
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-//    implementation 'androidx.activity:activity-compose:1.5.1'
-//    implementation platform('androidx.compose:compose-bom:2022.10.00')
-//    implementation 'androidx.compose.ui:ui'
-//    implementation 'androidx.compose.ui:ui-graphics'
-//    implementation 'androidx.compose.ui:ui-tooling-preview'
-//    implementation 'androidx.compose.material3:material3'
-//    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
-//    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
-//    debugImplementation 'androidx.compose.ui:ui-tooling'
-//    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+
+
+
+//    // cashRoulette (구룰렛 - 버즈룰렛)
+//    implementation ('com.avatye:cashroulette:4.8.0') {
+//        exclude group: 'com.avatye', module: 'cashroulette-plug-archive-aceenter'
+//    }
+//
+//    // blcok-adcash
+//    api "com.avatye.cashblock:unit-adcash:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-basement:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-adfit:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-applovin:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-cauly:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-fyber:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-mezzomedia:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-mobon:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-pangle:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-unity:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-nam:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-adpopcorn:2.1.0.9"
+//    implementation "com.avatye.cashblock:ad-plus-vungle:2.1.0.9"
 }
