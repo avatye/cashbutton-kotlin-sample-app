@@ -50,8 +50,8 @@ android {
 
 dependencies {
     // cashbutton
-    implementation ('com.avatye.cashbutton:product-button:3.0.0.300') {
-        exclude group: 'com.avatye.cashbutton', module: 'archive-ads-mezzomedia'
+    implementation ('com.avatye.cashbutton:product-button:3.0.3.303') {
+//        exclude group: 'com.avatye.cashbutton', module: 'archive-ads-mezzomedia'
     }
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
