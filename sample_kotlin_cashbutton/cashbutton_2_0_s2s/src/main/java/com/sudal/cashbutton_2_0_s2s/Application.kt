@@ -30,7 +30,7 @@ class Application : Application() {
             application = this,
             appId = "2f7dc58210b646e4bae2c6409dcb4a27",
             appSecret = "1855684419894d5e",
-            isAppTestMode = true
+            isAppTestMode = false
         ).apply {
             // debug-mode
             setUseDebug(use = true)
