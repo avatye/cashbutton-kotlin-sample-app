@@ -49,7 +49,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.avatye.cashblock:unit-adcash:2.0.0.14'
+    implementation 'com.avatye.cashblock:unit-adcash:2.1.0.9'
+    // 자체적으로 Unity 를 사용하실 경우 아래 코드 삭제
+    // implementation "com.avatye.cashblock:ad-plus-unity:2.1.0.9"
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
