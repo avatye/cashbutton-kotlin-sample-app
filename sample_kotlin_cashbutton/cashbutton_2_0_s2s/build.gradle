@@ -50,7 +50,7 @@ android {
 
 dependencies {
     // cashbutton
-    implementation ('com.avatye.cashbutton:product-button:3.0.4.304') {
+    implementation ('com.avatye.cashbutton:product-button:3.0.5.305_SNAPSHOT') {
 //        exclude group: 'com.avatye.cashbutton', module: 'archive-ads-mezzomedia'
     }
 
