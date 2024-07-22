@@ -48,10 +48,27 @@ android {
     }
 }
 
+ext {
+    libraryVersion = "2.1.0.11"
+}
+
 dependencies {
-    implementation 'com.avatye.cashblock:unit-adcash:2.1.0.9'
+    api "com.avatye.cashblock:unit-adcash:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-basement:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-adfit:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-applovin:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-cauly:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-fyber:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-mezzomedia:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-mobon:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-pangle:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-unity:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-nam:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-adpopcorn:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-vungle:$libraryVersion"
+
     // 자체적으로 Unity 를 사용하실 경우 아래 코드 삭제
-    // implementation "com.avatye.cashblock:ad-plus-unity:2.1.0.9"
+    // implementation "com.avatye.cashblock:ad-plus-unity:$libraryVersion"
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
