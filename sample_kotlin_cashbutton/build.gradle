@@ -51,6 +51,14 @@ allprojects {
         // CashBlock ADCash, CashBox, LineNews
         maven { url 'https://dl.cloudsmith.io/public/avatye/Android-CashBlock/maven/' }
         maven { url 'https://dl.cloudsmith.io/public/avatye/Android-CashBlock-Internal/maven/' }
+
+        // pointHome
+        maven {
+            url = "https://dl.cloudsmith.io/public/avatye/android-pointhome-internal/maven/"
+        }
+        maven {
+            url = "https://dl.cloudsmith.io/public/avatye/Android-PointHome/maven/"
+        }
     }
 
 }

@@ -34,6 +34,11 @@
         <meta-data
             android:name="avatye_market"
             android:value="googleplay" />  <!-- 마켓 정보를 입력합니다. googleplay or onestore -->
+
+        <!-- 캐시버튼 로그 -->
+        <meta-data
+            android:name="avatye_log"
+            android:value="true" />
         <meta-data
             android:name="com.buzzvil.APP_KEY"
             android:value="app-pub-150484850088628" /> <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->
