@@ -37,6 +37,21 @@
         <meta-data
             android:name="com.buzzvil.APP_KEY"
             android:value="app-pub-150484850088628" /> <!-- 테스트키 buzzvil_app_key : app-pub-150484850088628 -->
+
+        <!-- region # config -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <!-- endregion -->
+
+        <!-- region # ads-mediation -->
+        <meta-data
+            android:name="com.naver.gfpsdk.PUBLISHER_CD"
+            android:value="@string/nam_publisher_cd" />
+
+        <meta-data
+            android:name="cashblock.config.log"
+            android:value="true" />
         <!-- ============================================================================================================ -->
 
         <activity

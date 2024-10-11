@@ -3,10 +3,11 @@
     <string name="preference_file_key">preference_file_key</string>
 
     <string name="adcash_baaner_pid">1394f33f-9065-46d9-8c98-8e2a18472c02</string>
-    <string name="adcash_open_interstitial_baaner_pid">a36ee2f8-0e01-4f27-b3fc-b56ac02b8691</string>
-    <string name="adcash_open_reward_interstitial_baaner_pid">3ba0aecb-9b82-45eb-a276-14d521b66f8a</string>
-    <string name="adcash_close_interstitial_baaner_pid">f608e162-afd2-4099-944a-a3e600b994b6</string>
-    <string name="adcash_bottom_linear_common_baaner_pid">ef43d476-eb84-4a76-9a42-265085888c41</string>
-    <string name="adcash_bottom_linear_320x100_baaner_pid">1b2c0622-237c-411c-8952-159a11a296ff</string>
-    <string name="adcash_nam_baaner_pid">a2ee6725-4e1e-43bc-9765-77db5e4e2888</string>
+    <string name="adcash_open_interstitial_baaner_pid">79f60e87-32aa-4310-9edb-24d1ab6441d7</string>
+    <string name="adcash_open_reward_interstitial_baaner_pid">79f60e87-32aa-4310-9edb-24d1ab6441d7</string>
+    <string name="adcash_close_interstitial_baaner_pid">cfc84457-0a08-4c53-aed5-7c880d665251</string>
+    <string name="adcash_bottom_linear_common_baaner_pid">e05a80ec-2dba-4ab2-b93c-b3bfc2e40efe</string>
+    <string name="adcash_bottom_linear_320x100_baaner_pid">1f357fdb-d444-45c7-b291-958268c93871</string>
+    <string name="adcash_nam_baaner_pid">43617f5a-1c2b-4c7b-a1e7-79f7cbaf62cc</string>
+    <string name="nam_publisher_cd">7976096509</string>
 </resources>
