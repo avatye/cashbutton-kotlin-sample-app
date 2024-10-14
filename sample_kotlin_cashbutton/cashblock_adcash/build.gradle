@@ -66,9 +66,8 @@ dependencies {
     implementation "com.avatye.cashblock:ad-plus-nam:$libraryVersion"
     implementation "com.avatye.cashblock:ad-plus-adpopcorn:$libraryVersion"
     implementation "com.avatye.cashblock:ad-plus-vungle:$libraryVersion"
-
-    // 자체적으로 Unity 를 사용하실 경우 아래 코드 삭제
-    // implementation "com.avatye.cashblock:ad-plus-unity:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-admob:$libraryVersion"
+    implementation "com.avatye.cashblock:ad-plus-fan:$libraryVersion"
 
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
